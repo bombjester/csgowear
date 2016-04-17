@@ -1,0 +1,81 @@
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		
+		<div ng-controller="controller" class="container-fluid">
+			<h1>CSGO Wear <span id="italics">Alpha</span></h1>
+			<h4>Find the actual value of your skins</h4>
+			<form ng-submit="enter()">
+				<p class="center">Enter Your Steam Account Name: <input type="text" ng-model="box.name">
+				<input type="submit" value="Enter">
+				<p class="center" ng-hide="hidden2" ng-repeat="x in errors">{{x}}</p>
+			</form>
+			<p class="center" ng-if="apidown">Sorry! Steam API is down! Check <a href="https://steamgaug.es"> here</a> to check status. ༼ つ ◕_◕ ༽つSteam Take My Energy! ༼ つ ◕_◕ ༽つ</p>
+			<button style="margin-left: 45%" ng-if="apidown" ng-click="getwear()">Retry</button>
+			<p class="center" ng-hide="table">Filter: <input type="text" ng-model="yolo"> <button style="float: right" ng-click="hidetable()">Hide Values</button></p>
+			<table ng-hide="table" class="table table-hover">
+			    <thead>
+			      <tr>
+			        <th>Weapon</th>
+			        <th>Skin</th>
+			        <th>Condition</th>
+			        <th>Wear Value(Float Number)</th>
+			        <th>Range</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr ng-repeat="z in results | filter:yolo | orderBy:'wear' track by $index">
+			        <td>{{z.weapon}}</td>
+			        <td>{{z.skin}}</td>
+			        <td>{{z.condition}}</td>
+			        <td>{{z.wear}}</td>
+			        <td>{{z.range}}</td>
+			      </tr>
+			    </tbody>
+  			</table>
+			<div class="row">
+				<h4 style="text-align: center" ng-hide="hidden">Click an image to find the wear values</h4>
+				<p style="text-align: center" ng-hide="hidden">Filter: <input type="text" ng-model="filter_name"></p>
+				<hr>
+				<div class="result col-sm-4" ng-repeat="x in pics | filter:filter_name">{{x.market_name}}
+						<img ng-click="getwear()"src="http://steamcommunity-a.akamaihd.net/economy/image/{{x.icon_url}}/250x150">
+				</div>
+			<div>
+
+			<div class="row">
+				<div class="col-sm-12">
+					<h3> Use this <a href="https://steamcommunity.com/search/users/">link</a> to find your account name</h3>
+					<p>1. Type in their name as it appears on steam</p>
+					<p>2. Find and select the desired profile</p>
+					<p>3. Copy the last part of your url. Examples: https://steamcommunity.com/profiles/XXXXXXXXXXXXXX or https://steamcommunity.com/id/XXXXXX</p>
+					<p>4. Enter the info above! </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>Future Features</h3>
+						<ul>
+							<li>Adding values directly on the picture</li>
+							<li>Adding a meter to scale the value</li>
+							<li>Adding a suggestion box</li>
+							<li>Fixing bugs / finding alternative to the Steam API</li>
+							<li>And many more!</li>
+						</ul>
+				</div>
+				<div class='col-sm-6'>
+					<h3> Need Backup!</h3>
+
+					<p>Hi, if you like my stuff, feel free to send me skins trough my  <a href="https://steamcommunity.com/tradeoffer/new/?partner=8175476&token=RSREjCqA"> tradelink!</a></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

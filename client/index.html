@@ -1,0 +1,128 @@
+<html ng-app="app">
+<head>
+	<title>CS GO Wear!</title>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+  	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>
+  	 
+  	<script>
+  			var angular = angular.module('app', ['ngRoute',]);
+
+  			angular.config(function($routeProvider, $locationProvider){
+				$routeProvider
+
+				.when('/' , {
+					templateUrl: 'static/partials/main.html'
+				})
+				.otherwise({
+					redirectTo: '/'
+				});
+
+			});
+
+
+
+			angular.controller("controller", function($scope, factory){
+				$scope.pics = [];
+				$scope.errors = [];
+				$scope.results = [];
+				$scope.hidden = true;
+				$scope.hidden2 = true;
+				$scope.table = true;
+				$scope.apidown = false;
+				$scope.enter =function(){
+					$scope.errors = [];
+					$scope.table = true;
+					factory.enter($scope.box, function(callback){
+						if(callback == "Account name cannot be empty!" || callback == "Could not find account!" || callback == "Account is Private"){
+							$scope.errors = callback;
+							$scope.hidden2 = false;
+						}
+						else{
+							$scope.pics=callback;
+							//console.log($scope.pics);
+							$scope.hidden = false;
+							$scope.hidden2 = true;
+						}
+						
+					});
+					$scope.box = "";
+				}
+				$scope.script = function(){
+					factory.script();
+				}
+				$scope.getwear = function(){
+					$scope.apidown = false;
+					factory.getwear(function(callback){
+						$scope.results = callback;
+						if(callback == "api down"){
+							$scope.apidown = true;
+						}
+						else{
+							$scope.table = false;
+						}
+					});
+				}
+				$scope.hidetable = function(){
+					$scope.table = true;
+				}
+
+
+
+			})
+
+			angular.factory("factory", function($http){
+				var pics = [];
+				var results = [];
+				var errors = [];
+				var steamid = "";
+				functions = {};
+
+				functions.enter = function(data, callback){
+					pics = [];
+					errors = [];
+					
+					$http.post('/get_name', data).success(function(result){
+						
+						if (result === "Account name cannot be empty!" ||result === "Could not find account!" ||result === "Account is Private"){
+							errors.push(result);
+							callback(errors);
+						}
+						else{
+							steamid = data.name;
+							//console.log(result);
+							for (x in result){
+								if(result[x].tags[1].category == "Weapon"){
+								pics.push(result[x]);
+								}
+							}
+							callback(pics);
+						}
+						
+
+					})
+				}
+				functions.script = function(){
+					$http.get('/do').success(function(result){
+						//console.log(result);
+						
+					})
+				}
+				functions.getwear = function(callback){
+					results = [];
+					$http.get("/getwear/"+steamid).success(function(result){
+						//console.log(result);
+						results = result;
+						callback(results);
+					})
+				}
+
+
+
+				return functions;
+			})
+	</script>
+</head>
+<body>
+	<div ng-view=""> </div>
+</body>
+</html>

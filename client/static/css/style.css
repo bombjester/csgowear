@@ -1,0 +1,21 @@
+h1{
+	text-align: center;
+}
+h4{
+	text-align: center;
+}
+#italics{
+	font-style: italic;
+}
+.center{
+	margin-top: 5%;
+	text-align: center;
+	margin-bottom: 5%;
+}
+.container-fluid{
+	margin-left: 5%;
+	margin-right: 0%;
+}
+.result{
+	vertical-align: top;
+}
