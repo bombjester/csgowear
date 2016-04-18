@@ -12,9 +12,9 @@
 		
 		<div ng-controller="controller" class="container-fluid">
 			<h1>CSGO Wear <span id="italics">Alpha</span></h1>
-			<h4>Find the actual value of your skins</h4>
+			<h4>Find the actual value of cs skins</h4>
 			<form ng-submit="enter()">
-				<p class="center">Enter Your Steam Account Name: <input type="text" ng-model="box.name">
+				<p class="center">Enter A Steam Account Name: <input type="text" ng-model="box.name">
 				<input type="submit" value="Enter">
 				<p class="center" ng-hide="hidden2" ng-repeat="x in errors">{{x}}</p>
 			</form>
@@ -52,23 +52,52 @@
 
 			<div class="row">
 				<div class="col-sm-12">
-					<h3> Use this <a href="https://steamcommunity.com/search/users/">link</a> to find your account name</h3>
-					<p>1. Type in their name as it appears on steam</p>
-					<p>2. Find and select the desired profile</p>
-					<p>3. Copy the last part of your url. Examples: https://steamcommunity.com/profiles/XXXXXXXXXXXXXX or https://steamcommunity.com/id/XXXXXX</p>
-					<p>4. Enter the info above! </p>
+					<h3> Can't find the account? Use this <a href="https://steamcommunity.com/search/users/">link</a> and follow the steps below</h3>
+					<p>1. Click on the link above</p>
+					<p>2. Type in their name as it appears on steam</p>
+					<p>3. Find and select the desired profile</p>
+					<p>4. Copy the last part of the url in the browser. Examples: https://steamcommunity.com/profiles/XXXXXXXXXXXXXX or https://steamcommunity.com/id/XXXXXX</p>
+					<p>5. Enter the info above! </p>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>Float Value. What is it?</h3>
+					<p>Float values are numbers that represnet the condition the a skin. The lower the value, the better or cleaner the skin. The higher the value, the more wear and tear of the skin. The float value of skins are organized by 5 categories. If a skin's float value is between 0.44 – 1.00, it is considered Battle-Scarred. If a skin has a float value of .45, it is considered Battle-Scarred, but the actual paint on the skin may be similar to a Well-Worn skin.
+					</p>
+					<p>Here are the 5 categories:</p>
+						<ul>
+							<li>0.44 - 1.00 = Battle-Scarred</li>
+							<li>0.37 - .44 = Well-Worn</li>
+							<li>0.15 - 0.37 = Field Tested</li>
+							<li>0.07 - 0.15 = Minimal Wear</li>
+							<li>0.00 - 0.07 = Factory New</li>
+						</ul>
+				</div>
+				<div class="col-sm-6">
+					<h3>How to set your steam profile to public</h3>
+					<p>1. Log into your Steam Community Profile.</p>
+					<p>2. Click the Edit my Profile link under Actions.</p>
+					<p>3. Click the Settings tab.</p>
+					<p>4. Choose your privacy state.</p>
+					<p>5. Click the Save button.</p>
+				</div>
+			</div>
+
 			<div class="row">
 				<div class="col-sm-6">
 					<h3>Future Features</h3>
 						<ul>
 							<li>Adding values directly on the picture</li>
-							<li>Adding a meter to scale the value</li>
+							<li>Adding a meter to scale the float number to dollar value</li>
 							<li>Adding a suggestion box</li>
 							<li>Fixing bugs / finding alternative to the Steam API</li>
 							<li>And many more!</li>
 						</ul>
+						<br>
+						<br>
+						<br>
 				</div>
 				<div class='col-sm-6'>
 					<h3> Need Backup!</h3>
