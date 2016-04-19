@@ -42,11 +42,12 @@
 			    </tbody>
   			</table>
 			<div class="row">
-				<h4 style="text-align: center" ng-hide="hidden">Click an image to find the wear values</h4>
+				<h4 style="text-align: center" ng-hide="hidden"><button ng-click="getwear()">Find Wear of items</button></h4>
 				<p style="text-align: center" ng-hide="hidden">Filter: <input type="text" ng-model="filter_name"></p>
 				<hr>
-				<div class="result col-sm-4" ng-repeat="x in pics | filter:filter_name">{{x.market_name}}
-						<img ng-click="getwear()"src="http://steamcommunity-a.akamaihd.net/economy/image/{{x.icon_url}}/250x150">
+				<div class="result col-sm-4" ng-repeat="x in pics | filter:filter_name">
+					<p>{{x.market_name}}</p>
+					<img ng-click="getwear()"src="http://steamcommunity-a.akamaihd.net/economy/image/{{x.icon_url}}/250x150">
 				</div>
 			<div>
 

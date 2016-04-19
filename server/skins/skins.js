@@ -2340,8 +2340,8 @@ module.exports = [
 
 		},
 		{ defindex:"257", name: "cu_m4a1-s_elegant", 
-		description_string:		"PaintKit_cu_m4a1-s_elegant",
-		description_tag:		"PaintKit_cu_m4a1-s_elegant_Tag"
+		description_string:		"PaintKit_cu_m4a1_s_elegant",
+		description_tag:		"PaintKit_cu_m4a1_s_elegant_Tag"
 			
 		
 
@@ -2590,8 +2590,8 @@ module.exports = [
 
 		},
 		{ defindex:"290", name: "cu_usp_elegant", 
-		description_string:		"PaintKit_cu_usp-s_elegant",
-		description_tag:		"PaintKit_cu_m4a1-s_elegant_Tag"
+		description_string:		"PaintKit_cu_usp_s_elegant",
+		description_tag:		"PaintKit_cu_m4a1_s_elegant_Tag"
 			
 		
 
@@ -3073,8 +3073,8 @@ module.exports = [
 
 		},
 		{ defindex:"364", name: "cu_luggage_usp-s", 
-		description_string:		"PaintKit_cu_luggage_usp-s",
-		description_tag:		"PaintKit_cu_luggage_usp-s_Tag"
+		description_string:		"PaintKit_cu_luggage_usp_s",
+		description_tag:		"PaintKit_cu_luggage_usp_s_Tag"
 			
 		
 

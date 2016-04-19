@@ -764,7 +764,6 @@ module.exports = [
 	{PaintKit_cu_mp9_chevron:						"It has been painted using a striped hydographic arranged in a chevron pattern. Throw enough downfield and you're bound to hit the bullseye eventually"},
 	{PaintKit_cu_mp9_chevron_Tag:							"Dart"},
 	
-	{PaintKit_cu_mp7_commander_tag:							"Urban Hazard"},
 	{PaintKit_cu_fiveseven_urban_hazard:					"It has been custom painted with urban camo and red accents. Every year, Booth gathers the worlds foremost designer gunsmiths to show off their latest designs"},
 	
 	{PaintKit_aq_p250_cartel:								"It has been engraved with skeletons and flowers and given custom grips."},
@@ -1018,7 +1017,7 @@ module.exports = [
 	{PaintKit_cu_ak47_mastery_Tag:								"Elite Build"},
 
 	
-	{PaintKit_cu_cyrex_tag:				    "Cyrex"},
+	
 	{PaintKit_cu_cyrex:				        "It has been custom painted with a high-tech design in black, white, and red."},
 			
 	{PaintKit_cu_ump45_uproar:										"It has been painted using a combination of hydrographics and heat-transfer decals. If you didn't want collateral damage, perhaps you should have been more specific... - Javier Alviso, Fist of the Phoenix"},

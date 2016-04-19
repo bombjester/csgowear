@@ -142,6 +142,7 @@ module.exports = (function() {
 					 					if (inventory.result.items[x].defindex == names[y].defindex){
 					 						
 					 						weapons.push(names[y].name);
+
 					 						for (z in Skins){
 					 							if (Skins[z].defindex == inventory.result.items[x].attributes[0].float_value){
 					 								
@@ -168,6 +169,7 @@ module.exports = (function() {
 
 					 						
 					 						for (foo in Paints[asdf]){
+					 							//console.log(Paints[asdf][foo]);
 					 							paintsarray.push(Paints[asdf][foo]);
 					 						}
 					 						
@@ -199,7 +201,7 @@ module.exports = (function() {
 					 					rangearray.push(".00-.07");
 					 				}
 					 			}
-					 			
+					 			//console.log(weapons);
 					 			for (index in weapons){
 					 				finalarray.push({weapon: weapons[index], skin: paintsarray[index], wear: weararray[index], condition: conditionarray[index], range: rangearray[index]});
 					 			}
