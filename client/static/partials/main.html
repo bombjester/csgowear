@@ -16,7 +16,7 @@
 				<h4>Find the actual value of cs skins</h4>
 			</div>
 			<form ng-submit="enter()">
-				<p class="center">Enter Any Steam Account Name: <input type="text" ng-model="box.name" ng-init="box.name='bombjester'" value="bombjester">
+				<p class="center">Enter <span id="any">Any</span> Steam Account Name: <input type="text" ng-model="box.name" ng-init="box.name='bombjester'" value="bombjester">
 				<input type="submit" value="Enter">
 				<p class="center" ng-hide="hidden2" ng-repeat="x in errors">{{x}}</p>
 			</form>
