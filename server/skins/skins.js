@@ -1,6 +1,6 @@
 module.exports = [
 
-		{ defindex:"0", name: "default"},
+		{ defindex:"0", description_tag: "PaintKit_Default"},
 
 		{ defindex:"9001", name: "workshop_default"},
 
@@ -3239,7 +3239,7 @@ module.exports = [
 		},
 		{ defindex:"387", name: "cu_fiveseven_urban_hazard", 
 		description_string:		"PaintKit_cu_fiveseven_urban_hazard",
-		description_tag:		"PaintKit_cu_mp7-commander_tag"
+		description_tag:		"PaintKit_cu_mp7_commander_tag"
 			
 		
 

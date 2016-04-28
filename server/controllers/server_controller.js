@@ -142,14 +142,23 @@ module.exports = (function() {
 					 					if (inventory.result.items[x].defindex == names[y].defindex){
 					 						
 					 						weapons.push(names[y].name);
-
+					 						//console.log(names[y].name,inventory.result.items[x].attributes[0].float_value);
+					 						if(inventory.result.items[x].attributes[0].float_value % 1 != 0){
+					 							inventory.result.items[x].attributes[0].float_value = 0;
+					 							inventory.result.items[x].attributes[2].float_value = "No value for default";
+												
+					 						}
+					 						//console.log(inventory.result.items[x].attributes[0].float_value);
 					 						for (z in Skins){
+					 							
+
 					 							if (Skins[z].defindex == inventory.result.items[x].attributes[0].float_value){
 					 								
 					 								skinsarray.push(Skins[z].description_tag);
 					 								weararray.push(inventory.result.items[x].attributes[2].float_value);
 					 								
 					 							}
+					 							
 					 						}
 
 					 						
@@ -161,6 +170,7 @@ module.exports = (function() {
 					 			}
 
 					 			for (cs in skinsarray){
+					 				var pushed = false;
 					 				//console.log(skinsarray[cs]);
 					 				for(asdf in Paints){
 					 					//console.log(Object.keys(Paints[asdf])[0]);
@@ -171,10 +181,14 @@ module.exports = (function() {
 					 						for (foo in Paints[asdf]){
 					 							//console.log(Paints[asdf][foo]);
 					 							paintsarray.push(Paints[asdf][foo]);
+					 							pushed = true;
 					 						}
 					 						
 					 					}
-					 					
+					 				}
+					 				if (pushed == false){
+					 					console.log(skinsarray[cs]);
+					 					paintsarray.push("Can't find skin");
 					 				}
 
 					 			}
@@ -201,7 +215,7 @@ module.exports = (function() {
 					 					rangearray.push(".00-.07");
 					 				}
 					 			}
-					 			//console.log(weapons);
+					 			console.log(weapons.length, skinsarray.length, paintsarray.length, weararray.length);
 					 			for (index in weapons){
 					 				finalarray.push({weapon: weapons[index], skin: paintsarray[index], wear: weararray[index], condition: conditionarray[index], range: rangearray[index]});
 					 			}

@@ -1,5 +1,5 @@
 module.exports = [
-		{PaintKit_Default:							"Unnamed Paint Kit"},
+		{PaintKit_Default:							"Default"},
 		{PaintKit_Default_Tag:				"-"},
 
 		{PaintKit_so_yellow:					"It has individual parts spray-painted solid colors in a production line yellow color scheme. This bone crusher is a devastator"},
@@ -68,7 +68,7 @@ module.exports = [
 
 		{PaintKit_hy_arctic:						"It has been painted using an arctic camo hydrographic."},
 		{PaintKit_hy_arctic_Tag:			"Arctic Camo"},
-		{Paintkit_hy_arctic_contrast_:			"Polar Camo"},
+		{Paintkit_hy_arctic_contrast_Tag:			"Polar Camo"},
 		{Paintkit_hy_arctic_glacier_Tag:  	"Arctic Glacier Camo"},
 		
 		{PaintKit_hy_dive:							"It has been painted using a blue camo hydrographic. Ours is a world of intrigue...but sometimes camouflage is meant to be seen - Booth, Arms Dealer"},
@@ -126,7 +126,7 @@ module.exports = [
 		{PaintKit_sp_spray_jungle_Tag:	"Jungle Spray"},
 		{PaintKit_sp_spray_sand_Tag:		"Sand Spray"},
 		{PaintKit_sp_spray_waves_Tag:	"Wave Spray"},
-		{Paintkit_sp_spray_army_Tag:		"Army Recon"},
+		{PaintKit_sp_spray_army_Tag:		"Army Recon"},
 
 
 		{PaintKit_sp_tape_dots:						"It has been spray-painted using ripped tape strips and perforated metal as stencils."},
@@ -212,7 +212,7 @@ module.exports = [
 		{PaintKit_aq_oiled:							"It has been color case-hardened through the application of wood charcoal at high temperatures. A little color never hurt anyone"},
 		{PaintKit_aq_oiled_Tag:				"Case Hardened"},
 
-			{PaintKit_sp_spitfire_famas_Tag:	"Spitfire"},
+		{PaintKit_sp_spitfire_famas_Tag:	"Spitfire"},
 
 		{PaintKit_am_zebra:							"It has been painted in a zebra-stripe pattern with aluminum and chrome paints with various reflectivities, and has then been covered with a tomato red candy coat. Valeria doesn't pay Javier to ask questions... she pays him to pry out answers"},
 		{PaintKit_am_zebra_Tag:				"Slaughter"},
@@ -241,8 +241,8 @@ module.exports = [
 		{PaintKit_hy_feathers_aug:					"It has been decorated with dry-transfer decals of eagle feathers. An eagle looks majestic until it's clawing your eyes out"},
 		{PaintKit_hy_feathers_aug_Tag:		"Wings"},
 
-		{Paintkit_sp_palm:							"It has been spray-painted using cardboard cutouts, fine mesh, and palm leaves as stencils."},
-		{Paintkit_sp_palm_Tag:			"Palm"},
+		{PaintKit_sp_palm:							"It has been spray-painted using cardboard cutouts, fine mesh, and palm leaves as stencils."},
+		{PaintKit_sp_palm_Tag:			"Palm"},
 		{PaintKit_sp_palm_shadow_Tag:		"Tropical Storm"},
 
 		{PaintKit_cu_walnut_nova:					"It has a figured walnut stock."},
@@ -445,7 +445,7 @@ module.exports = [
 		{PaintKit_am_oval_hex_Tag:			"Caged Steel"},
 		
 		{PaintKit_cu_pinstripe_ak47:			"It has been given a bog oak stock and painted a white and green pinstripes. Questioning Imogen is questioning me. Now Relax, have some scotch, and let's talk business - The Father and The Phoenix Part 2"},
-			{PaintKit_cu_pinstripe_ak47_Tag:"Emerald Pinstripe"},
+			{PaintKit_cu_pinstripe_ak47_Tag: "Emerald Pinstripe"},
 
 		{PaintKit_cu_m4_asimov:                  "It has been custom painted with a sci-fi design. Anyone can predict the future... a visionary shapes it"},
 		{PaintKit_cu_m4_asimov_tag:            "Asiimov"},
