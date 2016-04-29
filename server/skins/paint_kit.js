@@ -1169,5 +1169,55 @@ module.exports = [
 	{PaintKit_gs_usp_voltage:											"It has been given a custom engraved silencer and slide. You got what you wanted, now do you know what that means? – Booth, Arms Dealer"},
 	{PaintKit_gs_usp_voltage_Tag:										"Lead Conduit"},
 
+	{PaintKit_cu_aug_swallows:										"It has been given a hydographic of birds flying through clouds. <i> Some birds represent harmony and peace... these are not those birds"},
+	{PaintKit_cu_aug_swallows_Tag:									"Fleet Flock"},
+
+	{PaintKit_cu_bizon_Curse:										"It has been custom painted in an Egyptian theme. <i>Its trigger weighs lighter than a feather"},
+	{PaintKit_cu_bizon_Curse_Tag:									"Judgement of Anubis"},
+
+	{PaintKit_gs_cz75a_redastor:										"It has been hand painted with red and white accents. <i>Booth has become synonymous with family drama; and who has time for drama when we're talking business"},
+	{PaintKit_gs_cz75a_redastor_Tag:									"Red Astor"},
+
+	{PaintKit_gs_dualberettas_ventilators:										"These pistols have been elegantly painted in chrome. <i>A weapon for artists, by artists"},
+	{PaintKit_gs_dualberettas_ventilators_Tag:									"Ventilators"},
+
+	{PaintKit_sp_g3sg1_militiaorange:										"Stencils and orange spray paint gave this rifle its signiture look. <i>Become a modern day Shere Khan"},
+	{PaintKit_sp_g3sg1_militiaorange_Tag:									"Orange Crash"},
+
+	{PaintKit_gs_galilar_incenerator:										"It has been given crimson accents and a hand painted icon. <i>Booth had this weapon commissioned for Valeria in an attempt to smooth things over with the Phoenix"},
+	{PaintKit_gs_galilar_incenerator_Tag:									"Firefight"},
+
+	{PaintKit_cu_m249_spectre:										"It has been painted in a sleek and contemporary manner. <i>The Phoenix civil war is about to begin"},
+	{PaintKit_cu_m249_spectre_Tag:									"Spectre"},
+
+	{PaintKit_cu_m4a1s_soultaker:										"It has been hand painted in vibrant colors and accentuated by a smiley face on the stock. <i>Protect what is yours"},
+	{PaintKit_cu_m4a1s_soultaker_Tag:								"Chantico's Fire"},
+
+	{PaintKit_am_mp9_bioleak:										"Varying shades of green create the illusion of a chemical spill. <i>BEWARE DIRECT EXPOSURE"},
+	{PaintKit_am_mp9_bioleak_Tag:						"Bioleak"},
+
+	{PaintKit_hy_p2000_oceani:									"It has been given a black base coat then accented with blue designs. <i>Has anyone heard from Kotaro or Carmen? - Felix Riley, Commanding Officer"},
+	{PaintKit_hy_p2000_oceani_Tag:								"Oceanic"},
+
+	{PaintKit_cu_p250_asiimov:									"It has been custom painted with a sci-fi design. <i>If you think I need a rifle to kill a man, you have no idea who you're talking to... - Mikha Biton, Phoenix Sniper"},
+	{PaintKit_cu_p250_asiimov_Tag:								"Asiimov"},
+
+	{PaintKit_gs_sawedoff_fubar:										"This well-traveled shotgun has tick marks carved into the barrel. <i>It starts with a bang... it ends with silence"},
+	{PaintKit_gs_sawedoff_fubar_Tag:									"Fubar"},
+
+	{PaintKit_cu_sg553_atlas:									"It has been given a modern camouflage hydographic. <i>It was once a design earmarked for the Coalition Taskforce, but Huxley engaged in corporate espionage to make it a Phoenix exclusive"},
+	{PaintKit_cu_sg553_atlas_Tag:								"Atlas"},
+
+	{PaintKit_gs_ssg08_armacore:									"It has been painted white and given arctic blue accents. <i>I can never replace what was taken from us... but I can take even more from them - The Phoenix and The Initiate Part 2"},
+	{PaintKit_gs_ssg08_armacore_Tag:								"Ghost Crusader"},
+
+	{PaintKit_am_tec9_redblast:									"The barrel has been given a flame decal. <i>I hate being right all the time - Carmen Cocinero, Extraction Expert"},
+	{PaintKit_am_tec9_redblast_Tag:								"Re-Entry"},
+
+	{PaintKit_cu_ump45_primalsaber:									"It has been given a decal of a sabertooth tiger skull <i>Every predator eventually meets their end"},
+	{PaintKit_cu_ump45_primalsaber_Tag:								"Primal Saber"},
+
+	{PaintKit_cu_xm1014_spectrum:										"A vision in black and white chrome, this shotgun is best used on formal occasions. <i>We have Izaki and Cocinero. You need them for anything or can I just kill them now? - The Mercenary and The Serpent Part 1"},
+	{PaintKit_cu_xm1014_spectrum_Tag:									"Black Tie"},
 
 ];

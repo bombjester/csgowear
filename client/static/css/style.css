@@ -24,8 +24,22 @@ html, body {
 	vertical-align: top;
 }
 .jumbotron{
+	margin-top: 5%;
 	margin-left: -5.5%;
 }
 #any{
 	font-weight: bold;
+}
+#bottom{
+	margin-left: 5%;
+}
+form{
+	margin-left: 10%;
+}
+.message{
+	width: 200px;
+}
+h5{
+	text-align: center;
+	font-style: italic;
 }

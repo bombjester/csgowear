@@ -4297,16 +4297,132 @@ module.exports = [
 		{ defindex:"539", name: "gs_tec9_jambiya", 
 		description_string:		"PaintKit_gs_tec9_jambiya",
 		description_tag:		"PaintKit_gs_tec9_jambiya_Tag"
-			
-		
-
 
 		},
 		{ defindex:"540", name: "gs_usp_voltage", 
 		description_string:		"PaintKit_gs_usp_voltage",
 		description_tag:		"PaintKit_gs_usp_voltage_Tag"
 			
-		}
+		},
+
+		{defindex: "541",
+			name:		"cu_aug_swallows",
+			description_string:		"PaintKit_cu_aug_swallows",
+			description_tag:	"PaintKit_cu_aug_swallows_Tag",
+			
+		},
+		
+		{defindex: "542",
+			name:		"cu_bizon_Curse",
+			description_string:		"PaintKit_cu_bizon_Curse",
+			description_tag:		"PaintKit_cu_bizon_Curse_Tag"
+			
+		},
+		
+		{defindex:"543",
+			name:		"gs_cz75a_redastor",
+			description_string:		"PaintKit_gs_cz75a_redastor",
+			description_tag:		"PaintKit_gs_cz75a_redastor_Tag"
+			
+		},
+		
+		{defindex: "544",
+			name:		"gs_dualberettas_ventilators",
+			description_string:		"PaintKit_gs_dualberettas_ventilators",
+			description_tag:		"PaintKit_gs_dualberettas_ventilators_Tag"
+		},
+		
+		{defindex: "545",
+			name:		"sp_g3sg1_militiaorange",
+			description_string:		"PaintKit_sp_g3sg1_militiaorange",
+			description_tag:		"PaintKit_sp_g3sg1_militiaorange_Tag"
+			
+		},
+		
+		{defindex: "546",
+			name:		"gs_galilar_incenerator",
+			description_string:		"PaintKit_gs_galilar_incenerator",
+			description_tag:		"PaintKit_gs_galilar_incenerator_Tag"
+			
+		},
+		
+		{defindex: "547",
+			name:		"cu_m249_spectre",
+			description_string:		"PaintKit_cu_m249_spectre",
+			description_tag:		"PaintKit_cu_m249_spectre_Tag"
+			
+		},
+		
+		{defindex: "548",
+			name:		"cu_m4a1s_soultaker",
+			description_string:		"PaintKit_cu_m4a1s_soultaker",
+			description_tag:		"PaintKit_cu_m4a1s_soultaker_Tag"
+			
+		},
+		
+		{defindex: "549",
+			name:		"am_mp9_bioleak",
+			description_string:		"PaintKit_am_mp9_bioleak",
+			description_tag:		"PaintKit_am_mp9_bioleak_Tag"
+			
+		},
+		
+		{defindex: "550",
+			name:		"hy_p2000_oceani",
+			description_string:		"PaintKit_hy_p2000_oceani",
+			description_tag:		"PaintKit_hy_p2000_oceani_Tag"
+			
+		},
+		
+		{defindex: "551",
+			name:		"cu_p250_asiimov",
+			description_string:		"PaintKit_cu_p250_asiimov",
+			description_tag:		"PaintKit_cu_p250_asiimov_Tag"
+			
+		},
+		
+		{defindex: "552",
+			name:		"gs_sawedoff_fubar",
+			description_string:		"PaintKit_gs_sawedoff_fubar",
+			description_tag:		"PaintKit_gs_sawedoff_fubar_Tag"
+			
+		},
+		
+		{defindex: "553",
+			name:		"cu_sg553_atlas",
+			description_string:		"PaintKit_cu_sg553_atlas",
+			description_tag:		"PaintKit_cu_sg553_atlas_Tag"
+			
+		},
+		
+		{defindex: "554",
+			name:		"gs_ssg08_armacore",
+			description_string:		"PaintKit_gs_ssg08_armacore",
+			description_tag:		"PaintKit_gs_ssg08_armacore_Tag"
+			
+		},
+		
+		{defindex: "555",
+			name:		"am_tec9_redblast",
+			description_string:		"PaintKit_am_tec9_redblast",
+			description_tag:		"PaintKit_am_tec9_redblast_Tag"
+			
+		},
+		
+		{defindex: "556",
+			name:		"cu_ump45_primalsaber",
+			description_string:		"PaintKit_cu_ump45_primalsaber",
+			description_tag:		"PaintKit_cu_ump45_primalsaber_Tag"
+			
+		},
+		
+		{defindex: "557",
+			name:		"cu_xm1014_spectrum",
+			description_string:		"PaintKit_cu_xm1014_spectrum",
+			description_tag:		"PaintKit_cu_xm1014_spectrum_Tag"
+			
+		},
+
 ];
 	
 
