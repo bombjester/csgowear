@@ -10,9 +10,9 @@
 		
 		<div ng-controller="controller" class="container-fluid">
 			<div class="jumbotron">
-				<h1>CSGO Wear <span id="italics">Alpha</span></h1>
+				<h1>CSGO Wear <span id="italics">Beta</span></h1>
 				<h4>Find the actual value of cs skins</h4>
-				<h5>Chroma 3 Case hype!</h5>
+				<h5>Gamma Case Update!</h5>
 			</div>
 			<form ng-submit="enter()">
 				<p class="center">Enter <span id="any">Any</span> Steam Account Name: <input type="text" ng-model="box.name" ng-init="box.name='bombjester'" value="bombjester">
@@ -20,7 +20,7 @@
 				<p class="center" ng-hide="hidden2" ng-repeat="x in errors">{{x}}</p>
 			</form>
 			<p class="center" ng-if="apidown">Sorry! Steam API is down! Check <a href="https://steamgaug.es"> here</a> to check status. ༼ つ ◕_◕ ༽つSteam Take My Energy! ༼ つ ◕_◕ ༽つ Keep retrying until it works!</p>
-			<button style="margin-left: 42%" ng-if="apidown" ng-click="getwear()">Retry</button>
+			<button style="margin-left: 45%" ng-if="apidown" ng-click="getwear()">Retry</button>
 			<p class="center" ng-hide="table">Filter: <input type="text" ng-model="yolo"> <button style="float: right" ng-click="hidetable()">Hide Values</button></p>
 			<table ng-hide="table" class="table table-hover">
 			    <thead>

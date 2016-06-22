@@ -1,3 +1,4 @@
+//https://api.steampowered.com/IEconItems_730/GetSchemaURL/v2/?key=F00F3C8ACC7B2184ED92B79D5CDB893A&format=json
 module.exports = [
 
 		{ defindex:"0", description_tag: "PaintKit_Default"},
@@ -4421,6 +4422,300 @@ module.exports = [
 			description_string:		"PaintKit_cu_xm1014_spectrum",
 			description_tag:		"PaintKit_cu_xm1014_spectrum_Tag"
 			
+		},
+
+		{defindex:"558",
+
+			name:		"cu_bayonet_lore",
+			description_string:		"Paintkit_cu_lore",
+			description_tag:		"Paintkit_cu_lore_Tag"
+			
+		},,
+		{defindex:"559",
+		
+			name:		"cu_flip_lore",
+			description_string:		"Paintkit_cu_lore",
+			description_tag:		"Paintkit_cu_lore_Tag"
+			
+		},
+		{defindex:"560",
+		
+			name:		"cu_gut_lore",
+			description_string:		"Paintkit_cu_lore",
+			description_tag:		"Paintkit_cu_lore_Tag"
+			
+		},
+		{defindex:"561",
+		
+			name:		"cu_karam_lore",
+			description_string:		"Paintkit_cu_lore",
+			description_tag:		"Paintkit_cu_lore_Tag"
+			
+		},
+		{defindex:"562",
+		
+			name:		"cu_m9_bay_lore",
+			description_string:		"Paintkit_cu_lore",
+			description_tag:		"Paintkit_cu_lore_Tag"
+			
+		},
+		{defindex:"563",
+		
+			name:		"cu_bayonet_stonewash",
+			description_string:		"Paintkit_cu_stonewash",
+			description_tag:		"Paintkit_cu_stonewash_Tag"
+			
+		},
+		{defindex:"564",
+		
+			name:		"cu_flip_stonewash",
+			description_string:		"Paintkit_cu_stonewash",
+			description_tag:		"Paintkit_cu_stonewash_Tag"
+			
+		},
+		{defindex:"565",
+		
+			name:		"cu_gut_stonewash",
+			description_string:		"Paintkit_cu_stonewash",
+			description_tag:		"Paintkit_cu_stonewash_Tag"
+			
+		},
+		{defindex:"566",
+		
+			name:		"cu_karam_stonewash",
+			description_string:		"Paintkit_cu_stonewash",
+			description_tag:		"Paintkit_cu_stonewash_Tag"
+			
+		},
+		{defindex:"567",
+		
+			name:		"cu_m9_bay_stonewash",
+			description_string:		"Paintkit_cu_stonewash",
+			description_tag:		"Paintkit_cu_stonewash_Tag"
+			
+		},
+		{defindex:"568",
+		
+			name:		"am_emerald_marbleized",
+			description_string:		"PaintKit_am_marbleized_g",
+			description_tag:		"PaintKit_am_marbleized_g_Tag"
+			
+		},
+		{defindex:"569",
+		
+			name:		"am_gamma_doppler_phase1",
+			description_string:		"PaintKit_am_marbleized_g",
+			description_tag:		"PaintKit_am_marbleized_g_Tag"
+			
+		},
+		{defindex:"570",
+		
+			name:		"am_gamma_doppler_phase2",
+			description_string:		"PaintKit_am_marbleized_g",
+			description_tag:		"PaintKit_am_marbleized_g_Tag"
+			
+		},
+		{defindex:"571",
+		
+			name:		"am_gamma_doppler_phase3",
+			description_string:		"PaintKit_am_marbleized_g",
+			description_tag:		"PaintKit_am_marbleized_g_Tag"
+			
+		},
+		{defindex:"572",
+		
+			name:		"am_gamma_doppler_phase4",
+			description_string:		"PaintKit_am_marbleized_g",
+			description_tag:		"PaintKit_am_marbleized_g_Tag"
+			
+		},
+		{defindex:"573",
+		
+			name:		"gs_bayonet_autotronic",
+			description_string:		"PaintKit_gs_autotronic",
+			description_tag:		"PaintKit_gs_autotronic_Tag"
+			
+		},
+		{defindex:"574",
+		
+			name:		"gs_flip_autotronic",
+			description_string:		"PaintKit_gs_autotronic",
+			description_tag:		"PaintKit_gs_autotronic_Tag"
+			
+		},
+		{defindex:"575",
+		
+			name:		"gs_gut_autotronic",
+			description_string:		"PaintKit_gs_autotronic",
+			description_tag:		"PaintKit_gs_autotronic_Tag"
+			
+		},
+		{defindex:"576",
+		
+			name:		"gs_karam_autotronic",
+			description_string:		"PaintKit_gs_autotronic",
+			description_tag:		"PaintKit_gs_autotronic_Tag"
+			
+		},
+		{defindex:"577",
+		
+			name:		"gs_m9_bay_autotronic",
+			description_string:		"PaintKit_gs_autotronic",
+			description_tag:		"PaintKit_gs_autotronic_Tag"
+			
+		},
+		{defindex:"578",
+		
+			name:		"hy_ocean_knife",
+			description_string:		"PaintKit_hy_ocean_knife",
+			description_tag:		"PaintKit_hy_ocean_Tag"
+			
+		},
+		{defindex:"579",
+		
+			name:		"hy_ocean_knife_90",
+			description_string:		"PaintKit_hy_ocean_knife",
+			description_tag:		"PaintKit_hy_ocean_Tag"
+			
+		},
+		{defindex:"580",
+		
+			name:		"am_marked_up",
+			description_string:		"PaintKit_am_marked_up",
+			description_tag:		"PaintKit_am_marked_up_Tag"
+			
+		},
+		{defindex:"581",
+		
+			name:		"am_marked_up_90",
+			description_string:		"PaintKit_am_marked_up",
+			description_tag:		"PaintKit_am_marked_up_Tag"
+			
+		},
+		{defindex:"582",
+		
+			name:		"am_marked_up_fine",
+			description_string:		"PaintKit_am_marked_up",
+			description_tag:		"PaintKit_am_marked_up_Tag"
+			
+		},
+		{defindex:"583",
+		
+			name:		"gs_aug_aristocrat",
+			description_string:		"PaintKit_gs_aug_aristocrat",
+			description_tag:		"PaintKit_gs_aug_aristocrat_Tag"
+			
+		},
+		{defindex:"584",
+		
+			name:		"gs_awp_phobos",
+			description_string:		"PaintKit_gs_awp_phobos",
+			description_tag:		"PaintKit_gs_awp_phobos_Tag"
+			
+		},
+		{defindex:"585",
+		
+			name:		"cu_five_seven_daimyo",
+			description_string:		"PaintKit_cu_five_seven_daimyo",
+			description_tag:		"PaintKit_cu_five_seven_daimyo_Tag"
+			
+		},
+		{defindex:"586",
+		
+			name:		"cu_glock_wasteland_rebel",
+			description_string:		"PaintKit_cu_glock_wasteland_rebel",
+			description_tag:		"PaintKit_cu_glock_wasteland_rebel_Tag"
+			
+		},
+		{defindex:"587",
+		
+			name:		"gs_m4a1_mecha_industries",
+			description_string:		"PaintKit_gs_m4a1_mecha_industries",
+			description_tag:		"PaintKit_gs_m4a1_mecha_industries_Tag"
+			
+		},
+		{defindex:"588",
+		
+			name:		"cu_m4a4_desolate_space",
+			description_string:		"PaintKit_cu_m4a4_desolate_space",
+			description_tag:		"PaintKit_cu_m4a4_desolate_space_Tag"
+			
+		},
+		{defindex:"589",
+		
+			name:		"aq_mac_10_alien_camo",
+			description_string:		"PaintKit_aq_mac_10_alien_camo",
+			description_tag:		"PaintKit_aq_mac_10_alien_camo_Tag"
+			
+		},
+		{defindex:"590",
+		
+			name:		"aq_nova_sci_fi",
+			description_string:		"PaintKit_aq_nova_sci_fi",
+			description_tag:		"PaintKit_aq_nova_sci_fi_Tag"
+			
+		},
+		{defindex:"591",
+		
+			name:		"gs_p2000_imperial_dragon",
+			description_string:		"PaintKit_gs_p2000_imperial_dragon",
+			description_tag:		"PaintKit_gs_p2000_imperial_dragon_Tag"
+			
+		},
+		{defindex:"592",
+		
+			name:		"gs_p250_metal_panels",
+			description_string:		"PaintKit_gs_p250_metal_panels",
+			description_tag:		"PaintKit_gs_p250_metal_panels_Tag"
+			
+		},
+		{defindex:"593",
+		
+			name:		"gs_p90_full_throttle",
+			description_string:		"PaintKit_gs_p90_full_throttle",
+			description_tag:		"PaintKit_gs_p90_full_throttle_Tag"
+			
+		},
+		{defindex:"594",
+		
+			name:		"gs_pp_bizon_harvester",
+			description_string:		"PaintKit_gs_pp_bizon_harvester",
+			description_tag:		"PaintKit_gs_pp_bizon_harvester_Tag"
+			
+		},
+		{defindex:"595",
+		
+			name:		"cu_r8_cybersport",
+			description_string:		"PaintKit_cu_r8_cybersport",
+			description_tag:		"PaintKit_cu_r8_cybersport_Tag"
+			
+		},
+		{defindex:"596",
+		
+			name:		"cu_sawed_off_lime",
+			description_string:		"PaintKit_cu_sawed_off_lime",
+			description_tag:		"PaintKit_cu_sawed_off_lime_Tag"
+			
+		},
+		{defindex:"597",
+		
+			name:		"gs_scar20_bloodsport",
+			description_string:		"PaintKit_gs_scar20_bloodsport",
+			description_tag:		"PaintKit_gs_scar20_bloodsport_Tag"
+			
+		},
+		{defindex:"598",
+		
+			name:		"cu_sg553_aerial",
+			description_string:		"PaintKit_cu_sg553_aerial",
+			description_tag:		"PaintKit_cu_sg553_aerial_Tag"
+			
+		},
+		{defindex:"599",
+		
+			name:		"am_tec_9_sea_salt",
+			description_string:		"PaintKit_am_tec_9_sea_salt",
+			description_tag:		"PaintKit_am_tec_9_sea_salt_Tag"
 		},
 
 ];
