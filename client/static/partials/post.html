@@ -1,26 +1,37 @@
 <html>
 	<head>
-		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<div class="jumbotron">
-				<h1>CSGO Wear <span id="italics">Alpha</span></h1>
-				<h4>Find the actual value of cs skins</h4>
-				<h5>Chroma 3 Case hype!</h5>
+
+		<div ng-controller="message_controller" class="container-fluid">
+			<h1>Welcome to the Message Board</h1>
+			<hr>
+			<div class="well"  ng-repeat="x in messages">{{x.name}} says: {{x.message}}</div>
+			<h3>Enter your name and leave a message below</h3>
+			<form role="form" ng-submit="message()">
+				  <div class="form-group">
+				    <label>Name:</label>
+				    <input type="text" class="form-control" style="width: 30%" ng-model="boxes.name" >
+				  </div>
+				  <div class="form-group">
+				    <label>Message:</label>
+				    <textarea class="form-control" rows="3" ng-model="boxes.message"></textarea>
+				  </div>
+				  <button type="submit" class="btn btn-default">Submit</button>
+			</form>
+
+			<div ng-if="errors" class="alert alert-info">
+				<strong>"Name or Message Cannot be empty!"</strong>
+			</div>
+			<div ng-if="errorlong" class="alert alert-danger">
+				<strong>"Name or Message is too Long!"</strong>
+			</div>
 		</div>
-		<h1> Message Board Coming Soon!</h1>
-		<!-- <form role="form">
-			  <div class="form-group">
-			    <label>Name:</label>
-			    <input type="text" class="form-control, name" >
-			  </div>
-			  <div class="form-group">
-			    <label>Message:</label>
-			    <input type="text" class="form-control, message">
-			  </div>
-			  <button type="submit" class="btn btn-default">Submit</button>
-		</form> -->
-		<hr>
+
+	
 	</body>
 </html>

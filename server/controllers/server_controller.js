@@ -1,6 +1,7 @@
 var request = require('request');
 var mongoose = require('mongoose');
 var Items = mongoose.model("items");
+var Messages = mongoose.model("messages");
 var Skins = require('./../skins/skins.js');
 var Paints = require('./../skins/paint_kit.js');
 var Inv = require('./../skins/getinventory.js');
@@ -254,6 +255,41 @@ module.exports = (function() {
 
 
 		},
+		add_message: function(req,res){
+			var message = new Messages({name: req.body.name, message: req.body.message});
+			if(req.body.name == undefined || req.body.message == undefined){
+				res.json("empty");
+			}
+			else if(req.body.name.length > 20 || req.body.message.length > 100){
+				
+				res.json("long");
+			}
+			else{
+				console.log(req.body.name.length);
+				message.save(function(err,result){
+					if(err){
+						console.log("error adding to db");
+					}
+					else{
+						res.json(result);
+					}
+				})
+			}
+		},
+
+		get_message: function(req,res){
+			Messages.find({}, function(err,result){
+				if(err){
+					console.log("error finding messages from db");
+				}
+				else{
+					res.json(result);
+				}
+			})
+		},
+
+
+
 
 	}
 

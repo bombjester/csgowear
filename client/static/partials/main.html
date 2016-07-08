@@ -2,24 +2,21 @@
 
 	<head>
 		<meta charset="utf-8">
-		
-		
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 		
 		<div ng-controller="controller" class="container-fluid">
-			<div class="jumbotron">
-				<h1>CSGO Wear <span id="italics">Beta</span></h1>
-				<h4>Find the actual value of cs skins</h4>
-				<h5>Gamma Case Update!</h5>
-			</div>
+			
 			<form ng-submit="enter()">
-				<p class="center">Enter <span id="any">Any</span> Steam Account Name: <input type="text" ng-model="box.name" ng-init="box.name='bombjester'" value="bombjester">
+				<p class="center">Enter <span id="any">Any</span> Steam Account Name:
+				<br>
+				<input type="text" ng-model="box.name" ng-init="box.name='bombjester'" value="bombjester">
 				<input type="submit" value="Enter">
 				<p class="center" ng-hide="hidden2" ng-repeat="x in errors">{{x}}</p>
 			</form>
-			<p class="center" ng-if="apidown">Sorry! Steam API is down! Check <a href="https://steamgaug.es"> here</a> to check status. ༼ つ ◕_◕ ༽つSteam Take My Energy! ༼ つ ◕_◕ ༽つ Keep retrying until it works!</p>
+			<div class="alert alert-warning" style="margin-right: 20%; margin-left: 20%;text-align: center" ng-if="apidown"><strong>Sorry! Steam API is down! Check <a href="https://steamgaug.es"> here</a> to check status. <br> ༼ つ ◕_◕ ༽つSteam Take My Energy! ༼ つ ◕_◕ ༽つ Keep retrying until it works!</strong></div>
+
 			<button style="margin-left: 45%" ng-if="apidown" ng-click="getwear()">Retry</button>
 			<p class="center" ng-hide="table">Filter: <input type="text" ng-model="yolo"> <button style="float: right" ng-click="hidetable()">Hide Values</button></p>
 			<table ng-hide="table" class="table table-hover">
@@ -45,7 +42,7 @@
 			<div class="row">
 				<h4 style="text-align: center" ng-hide="hidden"><button ng-click="getwear()">Find Values</button></h4>
 				<p style="text-align: center" ng-hide="hidden">Filter: <input type="text" ng-model="filter_name"></p>
-				<hr>
+				
 				<div class="result col-sm-4" ng-repeat="x in pics | filter:filter_name">
 					<p>{{x.market_name}}</p>
 					<img src="http://steamcommunity-a.akamaihd.net/economy/image/{{x.icon_url}}/250x150">

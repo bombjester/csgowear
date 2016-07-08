@@ -10,7 +10,12 @@ module.exports = function(app){
 	app.get('/getwear/:id', function(req,res){
 		server_controller.getwear(req,res);
 	})
-
+	app.post('/add_message', function(req,res){
+		server_controller.add_message(req,res);
+	})
+	app.get('/get_message', function(req,res){
+		server_controller.get_message(req,res);
+	})
 }
 
 
