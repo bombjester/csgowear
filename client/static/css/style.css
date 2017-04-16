@@ -41,7 +41,7 @@ html, body {
 #bottom{
 	margin-left: 5%;
 	color: white;
-	
+	display: block;
 }
 #background{
 	padding-top: 40px;
@@ -85,8 +85,10 @@ textarea {
 }
 .ng-scope{
 	display: block;
+	height: auto;
 }
 .white{
 	background-color: white;
-	height: 40vh;
+	height: auto;
+	display: inline-block;
 }

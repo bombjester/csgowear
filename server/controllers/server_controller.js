@@ -188,7 +188,8 @@ module.exports = (function() {
 					 					}
 					 				}
 					 				if (pushed == false){
-					 					console.log(skinsarray[cs]);
+
+					 					// console.log(skinsarray[cs] , "test");
 					 					paintsarray.push("Can't find skin");
 					 				}
 
