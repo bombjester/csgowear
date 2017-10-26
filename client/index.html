@@ -41,13 +41,17 @@
 				$scope.hidden2 = true;
 				$scope.table = true;
 				$scope.apidown = false;
+				
 				$scope.enter =function(){
 					$scope.errors = [];
 					$scope.table = true;
 					factory.enter($scope.box, function(callback){
-						if(callback == "Account name cannot be empty!" || callback == "Could not find account!" || callback == "Account is Private"){
+						if(callback == "Account name cannot be empty!" || callback == "Could not find account! or Steam API might be down. Keep trying!" || callback == "Account is Private"){
 							$scope.errors = callback;
 							$scope.hidden2 = false;
+							
+
+
 						}
 						else{
 							$scope.pics=callback;
@@ -185,7 +189,7 @@
     		</div>
     		<ul class="nav navbar-nav" >
       			<li><a href="#/">Home</a></li>
-      			<li><a href="#post">Message Board</a></li>
+      			<!-- <li><a href="#post">Message Board</a></li> -->
     		</ul>
   		</div>
 	</nav>

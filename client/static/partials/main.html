@@ -13,10 +13,11 @@
 			<h5>Gamma Case Update!</h5>
 		</div>
 			<form ng-submit="enter()">
-				<p class="center">Enter <span id="any">Any</span> Steam Account Name:
+				<p class="center">Enter <span id="any">Any</span> Steam Account Name: 
 				<br>
 				<input type="text" ng-model="box.name" ng-init="box.name='bombjester'" value="bombjester">
 				<input type="submit" value="Enter">
+				<p class="center">Note: Steam API might be slow!</p>
 				<p class="center" ng-hide="hidden2" ng-repeat="x in errors">{{x}}</p>
 			</form>
 			<div class="alert alert-warning" style="margin-right: 20%; margin-left: 20%;text-align: center" ng-if="apidown"><strong>Sorry! Steam API is down! Check <a href="https://steamgaug.es"> here</a> to check status. <br> ༼ つ ◕_◕ ༽つSteam Take My Energy! ༼ つ ◕_◕ ༽つ Keep retrying until it works!</strong></div>
